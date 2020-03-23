@@ -10,7 +10,7 @@
 </div>
 <div class="form-group">
     <label for="question-title">Explain your question</label>
-    <textarea type="text" rows="7" name="body" id="question-body" row="10" class="form-control {{ $errors->has('body') ? 'is-invalid': ''}}">{{ old('body', $question->title)}}</textarea>
+    <textarea type="text" rows="7" name="body" id="question-body" row="10" class="form-control {{ $errors->has('body') ? 'is-invalid': ''}}">{{ old('body', $question->body)}}</textarea>
     @if($errors->has('body'))
         <div class="invalid-feedback">
             <strong>{{ $errors->first('body')}}</strong>
